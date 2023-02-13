@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit ExamsMean{% endblock %}
+
+{% block body %}
+    <h1>Edit ExamsMean</h1>
+
+    {{ include('exams_mean/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_exams_mean_index') }}">back to list</a>
+
+    {{ include('exams_mean/_delete_form.html.twig') }}
+{% endblock %}

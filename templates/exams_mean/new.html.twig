@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ExamsMean{% endblock %}
+
+{% block body %}
+    <h1>Create new ExamsMean</h1>
+
+    {{ include('exams_mean/_form.html.twig') }}
+
+    <a href="{{ path('app_exams_mean_index') }}">back to list</a>
+{% endblock %}
